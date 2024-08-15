@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite parallel="false" name="Suite">
-    <test name="Test">
-    <groups>
-        <run>
-            <include name="HeaderTests" />
-            <!--<exclude name="HeaderTests" />-->
-        </run>
-    </groups>
+<suite name="ExampleSuite" >
+<test name="Test">
+        <parameter name="username" value="admin"/>
+        <parameter name="password" value="password"/>
         <classes>
-            <class name="session9.GroupsDemo"/>
-            <class name="session9.DemoOne"/>
-            <class name="session9.DemoTwo"/> 
-            <class name="session9.Activity5"/>
+            <class name="Activities.Activity_1"/>
+            <class name="Activities.Activity_2"/>
+            <class name="Activities.Activity_3"/>
+            <class name="Activities.Activity_4_1"/>
+            <class name="Activities.Activity_4_1"/>
+            <class name="Activities.Activity_5_testNg_group"/>
+            <class name="Activities.Activity_6"/>
+            <class name="Activities.Activity_7"/>
         </classes>
-    </test> <!-- Test -->
-</suite> <!-- Suite -->
+    </test>
+</suite>
